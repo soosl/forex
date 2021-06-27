@@ -338,6 +338,13 @@ h2 {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .sidebar-title {
@@ -434,6 +441,10 @@ h2 {
   border-radius: 40px;
   padding: 25px 21px 25px;
   font-family: Lato-Reg;
+  margin-bottom: 20px;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
 }
 
 .sidebar-broker-info {

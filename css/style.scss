@@ -309,6 +309,8 @@ h2 {
    padding-top: 15px;
    position: sticky;
    top: 0;
+   display: flex;
+   flex-direction: column;
 
    &-title {
       display: flex;
@@ -394,6 +396,8 @@ h2 {
       border-radius: 40px;
       padding: 25px 21px 25px;
       font-family: Lato-Reg;
+      margin-bottom: 20px;
+      order: -1;
 
       &-info {
          display: flex;
