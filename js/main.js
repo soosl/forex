@@ -90,3 +90,18 @@ $(window).on('load', function() {
    
    $(document).scroll(handleScroll);
 });
+
+if (window.matchMedia("(max-width: 768px)").matches) {
+   const hamburger = document.querySelector('.nav-hamburger');
+   const menu = document.querySelector('.mob-menu');
+
+   hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      menu.classList.toggle('dn');
+   });
+}
+
+if (window.matchMedia("(max-width: 576px)").matches) {
+   const broker = document.querySelector('.sidebar-broker');
+   broker.style.top = document.querySelector('.offer-title').scrollHeight + 70 + 'px';
+}
