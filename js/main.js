@@ -28,7 +28,7 @@ $('a[href*="#"]')
 				event.preventDefault();
 				$('html, body').animate(
 					{
-						scrollTop: target.offset().top - document.documentElement.clientHeight * 0.14,
+						scrollTop: target.offset().top - document.documentElement.clientHeight * 0.15,
 					},
 					1000
 				);
@@ -58,34 +58,35 @@ function debounce(func, wait, immediate) {
 	};
 }
 
-var sidebarAnchorsLinks = $('.sidebar-anchors-item a');
-var sections = $('.handle-anc');
-var sectionsScrollTop = sections.map(function (index, item) {
-	return $(item).offset().top;
-});
-
-
-
-const handleScroll = debounce(function () {
-   sections.each(function(index, item) {
-      if ($(document).scrollTop() > sectionsScrollTop[index] - ($(window).height() * 0.15)) {
-         var id = '#' + $(item).attr('id');
-         $(sidebarAnchorsLinks).each(function(index, item) {
-            $(item).removeClass('active');
-            if($(item).attr('href') === id) {
-               $(item).addClass('active');
-            }
-         })
-      }
-   });
-}, 20);
-
-$(document).scroll(handleScroll);
-
 const overallItems = document.querySelectorAll('.overall-item');
 
 overallItems.forEach(item => {
 	const result = item.querySelector('.overall-result');
 	const line = item.querySelector('.overall-line-active');
 	line.style.width = +result.textContent + '%';
+});
+
+
+$(window).on('load', function() {
+   var sidebarAnchorsLinks = $('.sidebar-anchors-item a');
+   var sections = $('.section-title');
+   var sectionsScrollTop = sections.map(function (index, item) {
+      return Math.floor($(item).offset().top);
+   });
+   
+   const handleScroll = debounce(function () {
+      sections.each(function(index, item) {
+         if (Math.floor($(document).scrollTop()) > (sectionsScrollTop[index] - $(window).height() * 0.16)) {
+            var id = '#' + $(item).attr('id');
+            $(sidebarAnchorsLinks).each(function(index, item) {
+               $(item).removeClass('active');
+               if($(item).attr('href') === id) {
+                  $(item).addClass('active');
+               }
+            })
+         }
+      });
+   }, 20);
+   
+   $(document).scroll(handleScroll);
 });
