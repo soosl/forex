@@ -76,7 +76,7 @@ $(window).on('load', function() {
    
    const handleScroll = debounce(function () {
       sections.each(function(index, item) {
-         if (Math.floor($(document).scrollTop()) > (sectionsScrollTop[index] - $(window).height() * 0.16)) {
+         if (Math.floor($(document).scrollTop()) > (sectionsScrollTop[index] - document.documentElement.clientHeight * 0.25)) {
             var id = '#' + $(item).attr('id');
             $(sidebarAnchorsLinks).each(function(index, item) {
                $(item).removeClass('active');
