@@ -401,21 +401,23 @@ h2 {
 }
 
 .sidebar-anchors-item span {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   position: relative;
   border: 1px solid #534E4E;
   border-radius: 50%;
   margin-right: 15px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .sidebar-anchors-item span::after {
   display: block;
   position: absolute;
-  right: 3px;
-  bottom: 3px;
+  width: 22px;
+  height: 22px;
   top: 3px;
   left: 3px;
   border-radius: 50%;
@@ -1085,14 +1087,14 @@ section.in-section {
   }
   .sidebar-anchors-item span {
     margin-right: 10px;
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
   }
   .sidebar-anchors-item span::after {
-    right: 2px;
-    bottom: 2px;
     left: 2px;
     top: 2px;
+    width: 18px;
+    height: 18px;
   }
   .sidebar-anchors-item span::before {
     height: 11px;
