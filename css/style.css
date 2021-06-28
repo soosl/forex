@@ -452,9 +452,6 @@ h2 {
   padding: 25px 21px 25px;
   font-family: Lato-Reg;
   margin-bottom: 20px;
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
 }
 
 .sidebar-broker-info {
@@ -735,6 +732,14 @@ section.in-section {
   font-family: Lato-Reg;
   font-size: 15px;
   color: #6A6D74;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: border 0.5s ease;
+  transition: border 0.5s ease;
+}
+
+.accounts-vs-link:hover {
+  border-color: #6A6D74;
 }
 
 .overall-text {
@@ -1051,6 +1056,10 @@ section.in-section {
   color: #868B97;
 }
 
+.offer-wrap .sidebar-broker {
+  display: none;
+}
+
 @media screen and (max-width: 1240px) {
   .page-sidebar {
     max-width: 32%;
@@ -1198,6 +1207,23 @@ section.in-section {
 }
 
 @media screen and (max-width: 768px) {
+  .offer-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .offer-wrap .sidebar-broker {
+    display: block;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin-left: 30px;
+  }
   .sidebar {
     padding: 0;
     position: relative;
@@ -1236,21 +1262,11 @@ section.in-section {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .offer-title {
-    max-width: calc(100% - 230px);
-  }
-  .page-content,
-  .page-sidebar {
+  .page-content {
     max-width: 100%;
   }
-  .sidebar-anchors,
-  .sidebar-title {
+  .page-sidebar {
     display: none;
-  }
-  .sidebar-broker {
-    position: absolute;
-    right: 0;
-    top: 70px;
   }
   .interface-list li {
     font-size: 18px;
@@ -1276,6 +1292,9 @@ section.in-section {
 }
 
 @media screen and (max-width: 576px) {
+  .resume-title::after {
+    bottom: -12px;
+  }
   .offer-date {
     margin-bottom: 10px;
   }
@@ -1292,15 +1311,20 @@ section.in-section {
   }
   .offer-title {
     max-width: 100%;
-    margin: 0 15px 180px;
+    margin: 0 15px 15px;
     text-align: center;
   }
-  .sidebar-broker {
-    top: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    right: auto;
+  .offer-wrap .sidebar-broker {
+    margin: 0 0 30px;
+  }
+  .offer-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .offer-table {
     padding: 15px;
@@ -1328,6 +1352,10 @@ section.in-section {
   .comments-form-submit {
     padding: 0 15px;
   }
+  .resume-char {
+    -webkit-column-gap: 15px;
+            column-gap: 15px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1336,12 +1364,6 @@ section.in-section {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .sidebar-broker {
-    left: 60px;
-    right: 60px;
-    -webkit-transform: none;
-            transform: none;
   }
   .offer-actions {
     margin-top: 15px;

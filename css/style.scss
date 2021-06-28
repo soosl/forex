@@ -416,7 +416,6 @@ h2 {
       padding: 25px 21px 25px;
       font-family: Lato-Reg;
       margin-bottom: 20px;
-      order: -1;
 
       &-info {
          display: flex;
@@ -664,6 +663,13 @@ section.in-section {
          font-family: $lat;
          font-size: 15px;
          color: #6A6D74;
+         padding-bottom: 2px;
+         border-bottom: 1px solid transparent;
+         transition: border 0.5s ease;
+
+         &:hover {
+            border-color: #6A6D74;
+         }
       }
    }
 }
@@ -920,6 +926,10 @@ section.in-section {
    }
 }
 
+.offer-wrap .sidebar-broker {
+   display: none;
+}
+
 @media screen and (max-width: 1240px) {
 
    .page-sidebar {
@@ -1095,6 +1105,18 @@ section.in-section {
 }
 
 @media screen and (max-width: 768px) {
+
+   .offer-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+   }
+
+   .offer-wrap .sidebar-broker {
+      display: block;
+      flex-shrink: 0;
+      margin-left: 30px;
+   }
    .sidebar {
       padding: 0;
       position: relative;
@@ -1129,12 +1151,7 @@ section.in-section {
       flex-direction: column-reverse;
    }
 
-   .offer-title {
-      max-width: calc(100% - 230px);
-   }
-
-   .page-content,
-   .page-sidebar {
+   .page-content {
       max-width: 100%;
    }
 
@@ -1142,15 +1159,8 @@ section.in-section {
    //    padding-top: 80px;
    // }
 
-   .sidebar-anchors,
-   .sidebar-title {
+   .page-sidebar {
       display: none;
-   }
-
-   .sidebar-broker {
-      position: absolute;
-      right: 0;
-      top: 70px;
    }
 
    .interface-list li {
@@ -1181,6 +1191,10 @@ section.in-section {
 }
 
 @media screen and (max-width: 576px) {
+
+   .resume-title::after {
+      bottom: -12px;
+   }
    .offer-date {
       margin-bottom: 10px;
    }
@@ -1199,15 +1213,17 @@ section.in-section {
 
    .offer-title {
       max-width: 100%;
-      margin: 0 15px 180px;
+      margin: 0 15px 15px;
       text-align: center;
    }
 
-   .sidebar-broker {
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      right: auto;
+   .offer-wrap .sidebar-broker {
+      margin: 0 0 30px;
+   }
+
+   .offer-wrap {
+      flex-direction: column;
+      align-items: center;
    }
 
    .offer-table {
@@ -1247,17 +1263,15 @@ section.in-section {
    .comments-form-submit {
       padding: 0 15px;
    }
+
+   .resume-char {
+      column-gap: 15px;
+   }
 }
 
 @media screen and (max-width: 480px) {
    .offer-post {
       flex-direction: column;
-   }
-
-   .sidebar-broker {
-      left: 60px;
-      right: 60px;
-      transform: none;
    }
 
    .offer-actions {

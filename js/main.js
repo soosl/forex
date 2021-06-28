@@ -100,8 +100,3 @@ if (window.matchMedia("(max-width: 768px)").matches) {
       menu.classList.toggle('dn');
    });
 }
-
-if (window.matchMedia("(max-width: 576px)").matches) {
-   const broker = document.querySelector('.sidebar-broker');
-   broker.style.top = document.querySelector('.offer-title').scrollHeight + 70 + 'px';
-}
