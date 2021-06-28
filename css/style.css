@@ -992,6 +992,11 @@ section.in-section {
   margin-bottom: 30px;
 }
 
+.footer-logo img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
 .footer-form {
   position: relative;
 }

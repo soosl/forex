@@ -874,6 +874,10 @@ section.in-section {
       max-width: 260px;
       display: inline-block;
       margin-bottom: 30px;
+
+      img {
+         filter: brightness(0) invert(1);
+      }
    }
 
    &-form {
