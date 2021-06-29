@@ -187,7 +187,7 @@ h2 {
 }
 
 .header-menu-item {
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 .header-menu-item a {
@@ -289,7 +289,6 @@ h2 {
   -webkit-column-gap: 40px;
           column-gap: 40px;
   row-gap: 36px;
-  margin-left: 25px;
 }
 
 .offer-logo {
@@ -545,7 +544,6 @@ h2 {
 }
 
 section.in-section {
-  padding-left: 65px;
   padding-bottom: 60px;
 }
 
@@ -1263,7 +1261,6 @@ section.in-section {
     margin: 0;
   }
   section.in-section {
-    padding-left: 0;
     padding-bottom: 45px;
   }
   .page-wrap {

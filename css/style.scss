@@ -181,7 +181,7 @@ h2 {
       display: flex;
 
       &-item {
-         margin: 0 10px;
+         margin: 0 5px;
 
          a {
             font-family: Lato-Reg;
@@ -267,7 +267,6 @@ h2 {
       grid-template-columns: 1fr 1fr;
       column-gap: 40px;
       row-gap: 36px;
-      margin-left: 25px;
    }
 
    &-logo {
@@ -495,7 +494,6 @@ h2 {
 }
 
 section.in-section {
-   padding-left: 65px;
    padding-bottom: 60px;
 }
 
@@ -1156,7 +1154,6 @@ section.in-section {
    }
 
    section.in-section {
-      padding-left: 0;
       padding-bottom: 45px;
    }
 
