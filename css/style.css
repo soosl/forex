@@ -91,7 +91,7 @@ h2 {
 .section-title {
   font-family: Lato-Reg;
   font-size: 27px;
-  color: #cd2653;
+  color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -271,7 +271,7 @@ h2 {
   margin-right: 20px;
   font-size: 15px;
   font-family: Lato-Reg;
-  color: #cd2653;
+  color: #0E0F13;
 }
 
 .offer-actions a img {
@@ -281,7 +281,7 @@ h2 {
 .offer-table {
   padding: 60px;
   border-radius: 16px;
-  background-color: #FCF0EF;
+  background-color: #EAF4F9;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -312,8 +312,8 @@ h2 {
 .offer-rate-btn {
   font-family: Lato-Reg;
   color: #fff;
-  background-color: #cd2653;
-  border: 1px solid #cd2653;
+  background-color: #6991A8;
+  border: 1px solid #6991A8;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   border-radius: 53px;
@@ -321,7 +321,7 @@ h2 {
 }
 
 .offer-rate-btn:hover {
-  color: #cd2653;
+  color: #6991A8;
   background-color: #fff;
 }
 
@@ -420,7 +420,7 @@ h2 {
   top: 3px;
   left: 3px;
   border-radius: 50%;
-  background: #F27D21;
+  background: #6E7980;
 }
 
 .sidebar-anchors-item span::before {
@@ -479,7 +479,7 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #cd2653;
+  color: #000;
   font-size: 27px;
   margin-right: 22px;
 }
@@ -517,21 +517,21 @@ h2 {
 .sidebar-broker-btn:nth-child(1) {
   color: #fff;
   border: 1px solid #fff;
-  background-color: #cd2653;
+  background-color: #6991A8;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   margin-right: 12px;
 }
 
 .sidebar-broker-btn:nth-child(1):hover {
-  color: #cd2653;
-  border-color: #cd2653;
+  color: #6991A8;
+  border-color: #6991A8;
   background-color: #fff;
 }
 
 .sidebar-broker-btn:nth-child(2) {
-  color: #cd2653;
-  border: 1px solid #cd2653;
+  color: #6991A8;
+  border: 1px solid #6991A8;
   background-color: #fff;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -540,7 +540,7 @@ h2 {
 .sidebar-broker-btn:nth-child(2):hover {
   color: #fff;
   border-color: #fff;
-  background-color: #cd2653;
+  background-color: #6991A8;
 }
 
 section.in-section {
@@ -562,7 +562,7 @@ section.in-section {
   display: block;
   width: 56px;
   height: 3px;
-  background-color: #cd2653;
+  background-color: #6991A8;
   left: 0;
   bottom: -20px;
 }
@@ -644,7 +644,7 @@ section.in-section {
 
 .interface-slider {
   padding: 20px 20px 25px;
-  background-color: #FCF0EF;
+  background-color: #EAF4F9;
   border-radius: 16px;
   margin-bottom: 24px;
 }
@@ -694,7 +694,7 @@ section.in-section {
       grid-template-columns: 1fr 1fr;
   -webkit-column-gap: 60px;
           column-gap: 60px;
-  background-color: #FCF0EF;
+  background-color: #EAF4F9;
   border-radius: 16px;
 }
 
@@ -732,7 +732,7 @@ section.in-section {
 .accounts-vs-link {
   font-family: Lato-Reg;
   font-size: 15px;
-  color: #6A6D74;
+  color: #212333;
   padding-bottom: 2px;
   border-bottom: 1px solid transparent;
   -webkit-transition: border 0.5s ease;
@@ -740,7 +740,7 @@ section.in-section {
 }
 
 .accounts-vs-link:hover {
-  border-color: #6A6D74;
+  border-color: #212333;
 }
 
 .overall-text {
@@ -769,12 +769,12 @@ section.in-section {
       flex-basis: 100%;
   height: 28px;
   border-radius: 18px;
-  background: #F4F4F4;
+  background: #CBDCE3;
 }
 
 .overall-line-active {
   height: 100%;
-  background-color: #cd2653;
+  background-color: #6991A8;
   border-radius: 18px;
 }
 
@@ -830,8 +830,8 @@ section.in-section {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 12px;
-  border: 1px solid #cd2653;
-  background-color: #cd2653;
+  border: 1px solid #5B4F52;
+  background-color: #5B4F52;
   color: #fff;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -839,7 +839,7 @@ section.in-section {
 
 .comments-form-submit:hover {
   background-color: #fff;
-  color: #cd2653;
+  color: #5B4F52;
 }
 
 .comments-item {
@@ -916,7 +916,7 @@ section.in-section {
   left: 0;
   right: 0;
   top: 0;
-  background-color: #FCF0EF;
+  background-color: #EAF4F9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -976,7 +976,7 @@ section.in-section {
 }
 
 .footer {
-  background-color: #282828;
+  background-color: #D9D9D9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -990,18 +990,13 @@ section.in-section {
   margin-bottom: 30px;
 }
 
-.footer-logo img {
-  -webkit-filter: brightness(0) invert(1);
-          filter: brightness(0) invert(1);
-}
-
 .footer-form {
   position: relative;
 }
 
 .footer-search {
   padding: 16px 15px 16px 50px;
-  background-color: #2F363F;
+  background-color: #fff;
   border-radius: 111px;
   border: none;
   color: #fff;
@@ -1011,19 +1006,19 @@ section.in-section {
 }
 
 .footer-search::-webkit-input-placeholder {
-  color: #868B97;
+  color: #969696;
 }
 
 .footer-search:-ms-input-placeholder {
-  color: #868B97;
+  color: #969696;
 }
 
 .footer-search::-ms-input-placeholder {
-  color: #868B97;
+  color: #969696;
 }
 
 .footer-search::placeholder {
-  color: #868B97;
+  color: #969696;
 }
 
 .footer-submit {
@@ -1047,7 +1042,7 @@ section.in-section {
 .footer-col-title {
   font-size: 16px;
   font-weight: bold;
-  color: #fff;
+  color: #000;
   margin-bottom: 20px;
 }
 
@@ -1056,7 +1051,7 @@ section.in-section {
 }
 
 .footer-col a {
-  color: #868B97;
+  color: #575757;
 }
 
 .offer-wrap .sidebar-broker {

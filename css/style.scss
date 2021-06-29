@@ -1,5 +1,5 @@
-$pink: #cd2653;
-$lightPink: #FCF0EF;
+$blue: #6991A8;
+$lightBlue: #EAF4F9;
 $tav: Taviraj-Reg;
 $tav-b: Taviraj-Bold;
 $lat: Lato-Reg;
@@ -96,7 +96,7 @@ h2 {
 .section-title {
    font-family: $lat;
    font-size: 27px;
-   color: $pink;
+   color: #000;
    display: flex;
    align-items: center;
    margin-bottom: 25px;
@@ -251,7 +251,7 @@ h2 {
          margin-right: 20px;
          font-size: 15px;
          font-family: $lat;
-         color: $pink;
+         color: #0E0F13;
 
          img {
             margin-right: 10px;
@@ -262,7 +262,7 @@ h2 {
    &-table {
       padding: 60px;
       border-radius: 16px;
-      background-color: $lightPink;
+      background-color: $lightBlue;
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 40px;
@@ -289,14 +289,14 @@ h2 {
       &-btn {
          font-family: $lat;
          color: #fff;
-         background-color: $pink;
-         border: 1px solid $pink;
+         background-color: $blue;
+         border: 1px solid $blue;
          transition: all 0.5s ease;
          border-radius: 53px;
          display: inline-block;
 
          &:hover {
-            color: $pink;
+            color: $blue;
             background-color: #fff;
          }
       }
@@ -384,7 +384,7 @@ h2 {
                top: 3px;
                left: 3px;
                border-radius: 50%;
-               background: #F27D21;
+               background: #6E7980;
             }
 
             &::before {
@@ -433,7 +433,7 @@ h2 {
          display: flex;
          align-items: center;
          justify-content: center;
-         color: $pink;
+         color: #000;
          font-size: 27px;
          margin-right: 22px;
 
@@ -466,27 +466,27 @@ h2 {
          &:nth-child(1) {
             color: #fff;
             border: 1px solid #fff;
-            background-color: $pink;
+            background-color: $blue;
             transition: all 0.5s ease;
             margin-right: 12px;
 
             &:hover {
-               color: $pink;
-               border-color: $pink;
+               color: $blue;
+               border-color: $blue;
                background-color: #fff;
             }
          }
 
          &:nth-child(2) {
-            color: $pink;
-            border: 1px solid $pink;
+            color: $blue;
+            border: 1px solid $blue;
             background-color: #fff;
             transition: all 0.5s ease;
 
             &:hover {
                color: #fff;
                border-color: #fff;
-               background-color: $pink;
+               background-color: $blue;
             }
          }
       }
@@ -510,7 +510,7 @@ section.in-section {
          display: block;
          width: 56px;
          height: 3px;
-         background-color: $pink;
+         background-color: $blue;
          left: 0;
          bottom: -20px;
       }
@@ -586,7 +586,7 @@ section.in-section {
 
    &-slider {
       padding: 20px 20px 25px;
-      background-color: $lightPink;
+      background-color: $lightBlue;
       border-radius: 16px;
       margin-bottom: 24px;
 
@@ -630,7 +630,7 @@ section.in-section {
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 60px;
-      background-color: $lightPink;
+      background-color: $lightBlue;
       border-radius: 16px;
    }
 }
@@ -664,13 +664,13 @@ section.in-section {
       &-link {
          font-family: $lat;
          font-size: 15px;
-         color: #6A6D74;
+         color: #212333;
          padding-bottom: 2px;
          border-bottom: 1px solid transparent;
          transition: border 0.5s ease;
 
          &:hover {
-            border-color: #6A6D74;
+            border-color: #212333;
          }
       }
    }
@@ -697,11 +697,11 @@ section.in-section {
       flex-basis: 100%;
       height: 28px;
       border-radius: 18px;
-      background: #F4F4F4;
+      background: #CBDCE3;
 
       &-active {
          height: 100%;
-         background-color: $pink;
+         background-color: $blue;
          border-radius: 18px;
       }
    }
@@ -744,14 +744,14 @@ section.in-section {
          display: flex;
          align-items: center;
          border-radius: 12px;
-         border: 1px solid $pink;
-         background-color: $pink;
+         border: 1px solid #5B4F52;
+         background-color: #5B4F52;
          color: #fff;
          transition: all 0.5s ease;
 
          &:hover {
             background-color: #fff;
-            color: $pink;
+            color: #5B4F52;
          }
       }
    }
@@ -818,7 +818,7 @@ section.in-section {
    left: 0;
    right: 0;
    top: 0;
-   background-color: $lightPink;
+   background-color: $lightBlue;
    display: flex;
    justify-content: center;
    padding-bottom: 60px;
@@ -866,7 +866,7 @@ section.in-section {
 }
 
 .footer {
-   background-color: #282828;
+   background-color: #D9D9D9;
    display: flex;
    padding: 78px 60px 150px;
    font-family: $lat;
@@ -875,10 +875,6 @@ section.in-section {
       max-width: 260px;
       display: inline-block;
       margin-bottom: 30px;
-
-      img {
-         filter: brightness(0) invert(1);
-      }
    }
 
    &-form {
@@ -887,14 +883,14 @@ section.in-section {
 
    &-search {
       padding: 16px 15px 16px 50px;
-      background-color: #2F363F;
+      background-color: #fff;
       border-radius: 111px;
       border: none;
       color: #fff;
       appearance: none;
 
       &::placeholder {
-         color: #868B97;
+         color: #969696;
       }
    }
 
@@ -917,7 +913,7 @@ section.in-section {
       &-title {
          font-size: 16px;
          font-weight: bold;
-         color: #fff;
+         color: #000;
          margin-bottom: 20px;
       }
 
@@ -926,7 +922,7 @@ section.in-section {
       }
 
       a {
-         color: #868B97;
+         color: #575757;
       }
    }
 }
