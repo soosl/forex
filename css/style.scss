@@ -180,6 +180,7 @@ h2 {
    &-menu {
       display: flex;
       margin-right: 90px;
+      flex-wrap: wrap;
 
       &-item {
          margin: 0 5px;
@@ -1020,8 +1021,8 @@ section.in-section {
       align-items: center;
       justify-content: center;
       position: absolute;
-      bottom: 100%;
-      left: 100%;
+      bottom: 120%;
+      left: 0;
       padding: 5px 10px;
       border-radius: 8px;
       font-family: $lat;
@@ -1029,6 +1030,7 @@ section.in-section {
       border: 1px solid #E2E2E2;
       opacity: 0;
       transition: opacity 0.3s ease;
+      width: max-content;
    }
 
    &.active span {
@@ -1116,7 +1118,8 @@ section.in-section {
       }
 
       &-wrap {
-         max-width: 1240px;
+         max-width: 1300px;
+         padding: 0 30px;
          margin: 0 auto;
          display: flex;
          align-items: center;
@@ -1234,6 +1237,18 @@ section.in-section {
 }
 
 @media screen and (max-width: 1024px) {
+   .header-menu {
+      margin-top: 15px;
+   }
+
+   .header-search span {
+      display: none;
+   }
+
+   .header-search::before {
+      content: none;
+   }
+
    .footer {
       flex-direction: column;
       align-items: center;
@@ -1308,6 +1323,10 @@ section.in-section {
 }
 
 @media screen and (max-width: 768px) {
+
+   .header-search {
+      right: 70px;
+   }
 
    .nav-hamburger {
       display: flex;

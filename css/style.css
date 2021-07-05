@@ -185,6 +185,8 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   margin-right: 90px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header-menu-item {
@@ -1168,8 +1170,8 @@ section.in-section {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  bottom: 100%;
-  left: 100%;
+  bottom: 120%;
+  left: 0;
   padding: 5px 10px;
   border-radius: 8px;
   font-family: Lato-Reg;
@@ -1180,6 +1182,9 @@ section.in-section {
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .offer-actions-share.active span {
@@ -1295,7 +1300,8 @@ section.in-section {
 }
 
 .search-form-wrap {
-  max-width: 1240px;
+  max-width: 1300px;
+  padding: 0 30px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1387,6 +1393,15 @@ section.in-section {
 }
 
 @media screen and (max-width: 1024px) {
+  .header-menu {
+    margin-top: 15px;
+  }
+  .header-search span {
+    display: none;
+  }
+  .header-search::before {
+    content: none;
+  }
   .footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1457,6 +1472,9 @@ section.in-section {
 }
 
 @media screen and (max-width: 768px) {
+  .header-search {
+    right: 70px;
+  }
   .nav-hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
